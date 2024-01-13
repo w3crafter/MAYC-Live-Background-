@@ -1,0 +1,244 @@
+body {
+  background-color: #131313;
+  margin: 0;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Fluid {
+  display: flex;
+  margin-top: -10vw; /* Use a percentage of the viewport width */
+}
+
+@media (min-width: 768px) {
+  .Fluid {
+    margin-top: -100px; /* Adjust for larger screens using pixels */
+  }
+}
+
+
+
+/* Define keyframes for the hover animation */
+@keyframes hoverGradient {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #b4e015, #1be215, #b4e015);
+    background-size: 200% 200%;
+    transition: all 0.4s;
+}
+
+.btn-gradient:hover {
+    animation: hoverGradient 1s infinite;
+}
+
+
+.area {
+    background: #131313;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96%;
+
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  background: linear-gradient(90deg, #b4e015, #1be215);
+  animation: animate 45s linear infinite;
+  bottom: 5%;
+  opacity: 0; /* Set initial opacity to hide the squares */
+}
+
+
+
+.circles li:nth-child(1) {
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+      animation-duration: 12s;
+}
+
+.circles li:nth-child(2) {
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 2.5s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 5s;
+    animation-duration: 12s;
+}
+
+
+
+.circles li:nth-child(4) {
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 7.5s;
+    animation-duration: 12s;
+}
+
+
+
+.circles li:nth-child(5) {
+    left: 15%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 1s;
+      animation-duration: 12s;
+}
+
+.circles li:nth-child(6) {
+    left: 15%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 3.5s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(7) {
+    left: 15%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 6s;
+    animation-duration: 12s;
+}
+
+
+
+.circles li:nth-child(8) {
+    left: 15%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 8.5s;
+    animation-duration: 12s;
+}
+
+
+
+
+.circles li:nth-child(9) {
+    right:  5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+      animation-duration: 12s;
+}
+
+.circles li:nth-child(10) {
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 2.5s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(11) {
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 5s;
+    animation-duration: 12s;
+}
+
+
+
+.circles li:nth-child(12) {
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 7.5s;
+    animation-duration: 12s;
+}
+
+
+
+.circles li:nth-child(13) {
+    right: 15%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 1s;
+      animation-duration: 12s;
+}
+
+.circles li:nth-child(14) {
+    right: 15%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 3.5s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(15) {
+    right: 15%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 6s;
+    animation-duration: 12s;
+}
+
+
+
+.circles li:nth-child(16) {
+    right: 15%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 8.5s;
+    animation-duration: 12s;
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: translateX(0) translateY(0) ;
+        opacity: .9;
+        border-radius: 50%;
+        width: 100px;  /* Initial width */
+        height: 100px;  /* Initial height */
+    }
+
+    100% {
+        transform: translateX(0px) translateY(-800px) ;
+        opacity: 0;
+        border-radius: 100%;
+        width: 0px;  /* Final shrink */
+        height: 0px;  /* Final shrink */
+    }
+}
